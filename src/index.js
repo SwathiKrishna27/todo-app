@@ -1,17 +1,14 @@
 
-import React from 'react';
-import ReactDOM from "react-dom";
-//import AppContainer from "./Components/appcontainer";
-//import TaskContainer from "./Components/taskc";
-//import SingleTask from "./Components/singletask";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import './index.css'
+import App from './App'
+import TaskProvider from './TaskProvider'
 
-import App from "./App";
-//import Greet from "./Greet";
-
-const rootElement = document.getElementById("root");
+// 2
 ReactDOM.render(
-  <React.StrictMode>
+  <TaskProvider>
     <App />
-  </React.StrictMode>,
-rootElement
-);
+  </TaskProvider>,
+  document.getElementById('root')
+)
